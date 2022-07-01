@@ -9,9 +9,10 @@ import javax.persistence.*;
 @Getter
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn
+@Table(name = "Product")
 public class ProductEntity {
     @Id
-    @Column(name = "productIdx", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productIdx;
 
     @Column(name = "type", nullable = false, length = 10)

@@ -6,9 +6,10 @@ import javax.persistence.*;
 
 @Entity
 @Getter
+@Table(name = "Website")
 public class WebsiteEntity {
     @Id
-    @Column(name = "webIdx", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long webIdx;
 
     @Column(name = "price", nullable = false, length = 20)
