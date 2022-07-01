@@ -1,4 +1,4 @@
-package com.example.getIt.entity;
+package com.example.getIt.service.entity;
 
 import lombok.Getter;
 import lombok.Setter;
